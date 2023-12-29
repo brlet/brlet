@@ -1,0 +1,784 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>柳暗花明又一村——中国乡村发展二十年</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			margin: 0;
+			font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", 微软雅黑, STHeitiSC-Light, simsun, 黑体，宋体, "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", sans-serif;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#body1 {
+			margin: 0;
+			font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", 微软雅黑, STHeitiSC-Light, simsun, 黑体，宋体, "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", sans-serif;
+			background-image: url("xiangcun-images/背景1.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#body2 {
+			margin: 0;
+			font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", 微软雅黑, STHeitiSC-Light, simsun, 黑体，宋体, "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", sans-serif;
+			background-image: url("xiangcun-images/背景2.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#body3 {
+			margin: 0;
+			font-family: "PingFang SC", "Lantinghei SC", "Helvetica Neue", Helvetica, Arial, "Microsoft YaHei", 微软雅黑, STHeitiSC-Light, simsun, 黑体，宋体, "WenQuanYi Zen Hei", "WenQuanYi Micro Hei", sans-serif;
+			background-image: url("xiangcun-images/背景3.png");
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			background-position: center;
+		}
+
+		#body1-1 {
+			padding: 100px 0px 0px 0px;
+			background-color: rgba(199, 222, 228, 0.81);
+			padding: 10px 30px 20px 30px;
+		}
+
+		#body2-1 {
+			margin: 0 auto;
+			background-color: rgba(223, 223, 201, 0.758);
+			padding: 10px 30px 20px 30px;
+		}
+
+		#body3-1 {
+			margin: 0 auto;
+			background-color: rgba(196, 222, 203, 0.84);
+			padding: 10px 30px 20px 30px;
+		}
+
+		@font-face {
+			font-family: mofa;
+			src: url(HP-font/FRSCRIPT.TTF);
+		}
+
+		#container {
+			max-width: 750px;
+			margin: 0 auto;
+			padding: 10px 30px 20px 30px;
+		}
+
+		.标题 {
+			width: 100%;
+			height: 100vh;
+			background-image: url(xiangcun-images/大标题.jpg);
+			background-size: cover;
+			overflow: hidden;
+			background-position: center center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		p {
+			text-indent: 1.9em;
+			line-height: 2;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		#水 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 50px 0px -40px 0px;
+			text-indent: 2em;
+			line-height: 2;
+			font-size: 2rem;
+			color: #151515;
+		}
+
+		#shuinan {
+			width: 100%;
+			height: auto;
+			margin: 0 auto;
+			padding: 25px 0px 0px 0px;
+			text-align: center;
+		}
+
+		.shui {
+			width: 100%;
+			height: auto;
+		}
+
+		#庄1 {
+			width: 750px;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			margin: 100px 0px -50px 0px;
+		}
+
+		.庄图片1 {
+			width: 450px;
+			height: auto;
+			float: left;
+		}
+
+		.庄文案1 {
+			width: 285px;
+			height: auto;
+			float: left;
+			margin: -5px 5px 10px 10px;
+			padding: 110px 0px 0px 0px;
+			text-indent: 1.9em;
+			line-height: 2;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		#庄2 {
+			width: 750px;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			margin: 50px 0px -80px 0px;
+		}
+
+		.庄图片2 {
+			width: 450px;
+			height: auto;
+			float: right;
+		}
+
+		.庄文案2 {
+			width: 285px;
+			height: auto;
+			float: right;
+			margin: -5px 5px 10px 10px;
+			padding: 80px 0px 0px 0px;
+			text-indent: 1.9em;
+			line-height: 2;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		#水南庄1 {
+			width: 750px;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			margin: 0px 0px -120px 0px;
+		}
+
+		.水南图片1 {
+			width: 450px;
+			height: auto;
+			float: left;
+		}
+
+		.水南文案1 {
+			width: 285px;
+			height: auto;
+			float: left;
+			margin: -5px 5px 10px 10px;
+			text-indent: 1.9em;
+			line-height: 2;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		#水南庄2 {
+			width: 750px;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			margin: 0px 0px -160px 0px;
+		}
+
+		.水南图片2 {
+			width: 390px;
+			height: auto;
+			float: right;
+		}
+
+		.水南文案2 {
+			width: 345px;
+			height: auto;
+			float: right;
+			margin: -5px 5px 10px 10px;
+			text-indent: 1.9em;
+			line-height: 2;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		#水南庄3 {
+			width: 750px;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			margin: 60px 0px -30px 0px;
+		}
+
+		.水南图片3 {
+			width: 450px;
+			height: auto;
+			float: left;
+		}
+
+		.水南文案3 {
+			width: 285px;
+			height: auto;
+			float: left;
+			margin: -5px 5px 10px 10px;
+			padding: 20px 0px 0px 0px;
+			text-indent: 1.9em;
+			line-height: 2;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		#政策 {
+			width: 750px;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			margin: 50px 0px 0px 0px;
+		}
+
+		.政策图片 {
+			width: 450px;
+			height: auto;
+			float: left;
+		}
+
+		.政策文案 {
+			width: 260px;
+			height: auto;
+			float: left;
+			margin: 70px 5px 20px 10px;
+			padding: 20px 0px 0px 0px;
+			text-indent: 1.9em;
+			line-height: 2.5;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		.卫生 {
+			width: 300px;
+			height: auto;
+			float: left;
+			margin: 50px 0px 20px 0px;
+			padding: 20px 0px 0px 0px;
+		}
+
+		.nongmingong {
+			width: 70%;
+			height: auto;
+		}
+
+		#农民工 {
+			width: 750px;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			margin: 50px 0px -170px 0px;
+		}
+
+		.农民工图片 {
+			width: 450px;
+			height: auto;
+			float: left;
+		}
+
+		.农民工文案 {
+			width: 285px;
+			height: auto;
+			float: left;
+			margin: -5px 5px 10px 10px;
+			text-indent: 1.9em;
+			line-height: 2;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		#挖掘机 {
+			width: 750px;
+			height: 500px;
+			margin-right: auto;
+			margin-left: auto;
+			margin: 50px 0px -150px 0px;
+		}
+
+		.挖掘机图片 {
+			width: 450px;
+			height: auto;
+			float: right;
+		}
+
+		.挖掘机文案 {
+			width: 285px;
+			height: auto;
+			float: right;
+			margin: -5px 5px 10px 10px;
+			padding: 70px 0px 0px 0px;
+			text-indent: 1.9em;
+			line-height: 2;
+			font-size: 1.2rem;
+			color: #151515;
+		}
+
+		.box {
+			width: 750px;
+			height: 400px;
+			padding: 0;
+			margin: 50px 0px 60px 0px;
+			border: 2px solid rgb(223, 223, 201);
+			overflow: hidden;
+			background-color: rgb(255, 255, 255);
+			box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.5);
+			list-style: none;
+		}
+
+		.box li {
+			float: left;
+			position: relative;
+			width: 250px;
+			height: 400px;
+			box-shadow: 0 0 25px rgb(223, 223, 201);
+			transition: all 0.5s;
+		}
+
+		.box li .text {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			font-size: 15px;
+			color: #FFF;
+			width: 100%;
+			height: 30px;
+			line-height: 25px;
+			background: rgb(223, 223, 201);
+			background-color: rgba(224, 210, 154, 0.7);
+			display: flex;
+			justify-content: center;
+			/* 在水平方向上居中 */
+			align-items: center;
+			/* 在垂直方向上居中 */
+		}
+
+		.box:hover li {
+			width: 100px;
+		}
+
+		.box li:hover {
+			width: 550px;
+		}
+
+		.box1 {
+			width: 750px;
+			height: 400px;
+			padding: 0;
+			margin: 50px 0px 60px 0px;
+			border: 2px solid rgb(223, 223, 201);
+			overflow: hidden;
+			background-color: rgb(255, 255, 255);
+			box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.5);
+			list-style: none;
+		}
+
+		.box1 li {
+			float: left;
+			position: relative;
+			width: 250px;
+			height: 400px;
+			box-shadow: 0 0 25px rgb(201, 223, 203);
+			transition: all 0.5s;
+		}
+
+		.box1 li .text {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			font-size: 15px;
+			color: #FFF;
+			width: 100%;
+			height: 30px;
+			line-height: 25px;
+			background: rgb(204, 223, 201);
+			background-color: rgba(154, 224, 161, 0.7);
+			display: flex;
+			justify-content: center;
+			/* 在水平方向上居中 */
+			align-items: center;
+			/* 在垂直方向上居中 */
+		}
+
+		.box1:hover li {
+			width: 100px;
+		}
+
+		.box1 li:hover {
+			width: 550px;
+		}
+
+
+		.slidershow {
+			width: 700px;
+			height: 515.5px;
+			overflow: hidden;
+			border: 5px solid #ffffff;
+		}
+
+		.middle {
+			position: relative;
+			margin: 15px;
+			/* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+		}
+
+		.navigation {
+			position: relative;
+			margin: 0 auto;
+			width: 750px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%); */
+		}
+
+		.bar {
+			width: 60px;
+			height: 25px;
+			border: 3px solid hsl(0, 0%, 100%);
+			margin: 8px;
+			cursor: pointer;
+			transition: 0.5s;
+			display: inline-block;
+			margin: 5px;
+			padding: 6px 5px 5px 8px;
+			background-color: hsl(139, 44%, 70%);
+			cursor: pointer;
+			color: #ffffff;
+			font-size: 18px;
+		}
+
+		.bar:hover {
+			background: hsl(118, 64%, 77%);
+		}
+
+		#农业文化遗产 {
+			color: #46a964;
+			font-size: 18px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-indent: 0;
+		}
+
+		input[name="r"] {
+			position: absolute;
+			visibility: hidden;
+		}
+
+		.slides {
+			width: 700%;
+			height: 100%;
+			display: flex;
+		}
+
+		.slide {
+			width: 14.285714285714%;
+			transition: 0.5s;
+		}
+
+		.slide img {
+			width: 100%;
+			height: 100%;
+		}
+
+		#r1:checked~.s1 {
+			margin-left: 0;
+		}
+
+		#r2:checked~.s1 {
+			margin-left: -14.285714285714%;
+		}
+
+		#r3:checked~.s1 {
+			margin-left: -28.571428571428%;
+		}
+
+		#r4:checked~.s1 {
+			margin-left: -42.857142854142%;
+		}
+
+		#r5:checked~.s1 {
+			margin-left: -57.142857142857%;
+		}
+
+		#r6:checked~.s1 {
+			margin-left: -71.428571428571%;
+		}
+
+		#r7:checked~.s1 {
+			margin-left: -85.7142857142%;
+		}
+
+		#结尾分隔 {
+			width: 750px;
+			height: auto;
+		}
+
+		footer {
+			color: #ffffff;
+			background-color: #93c99a;
+			padding: 70px 0px 80px 0px;
+			text-align: center;
+			font-size: 1.1rem;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div class="标题"><img src="xiangcun-images/大标题.jpg" alt="又一村"></div>
+	</header>
+	<div style="clear: both;"></div>
+	<div id="body1">
+		<div id="body1-1">
+			<div id="container">
+				<div style="clear: both;"></div>
+				<p id="水">“水南庄，一个乡村城镇化的缩影。”</p>
+				<div id="庄1">
+					<img class="庄图片1" src="xiangcun-images/水南庄1.png" alt="庄1">
+					<div class="庄文案1">
+						2023年12月11日，北京迎来了冬季的首场降雪。一夜飘落过后，绵密的雪裹挟着铁道内的碎石，一直延伸到京哈客运专线的尽头。
+					</div>
+				</div>
+				<div id="庄2">
+					<img class="庄图片2" src="xiangcun-images/水南庄2.jpg" alt="庄2">
+					<div class="庄文案2">
+						这条专线在朝阳区南磨房乡开设了一个道口，由石门东路将专线两侧的居民区连接起来。道口栏杆不断地升起又降下，和谐号依旧在轨道上快速行进。
+					</div>
+				</div>
+				<div id="水南庄1">
+					<img class="水南图片1" src="xiangcun-images/shuinanzhuang01.jpg" alt="水南庄1">
+					<div class="水南文案1">
+						西侧的居民区不规整地散落在轨道旁，斑驳的墙面、堆雪的铁皮屋顶，让这周围的平房与现代交通设施显得不那么融洽。这些平房大多由水泥砖直接砌成，墙面被不均匀地抹上了水泥，有的仅用塑料板加以遮挡，杂乱的电线也随意地搭在屋檐边上。
+					</div>
+				</div>
+				<div id="水南庄2">
+					<img class="水南图片2" src="xiangcun-images/shuinanzhuang02.jpg" alt="水南庄2">
+					<div class="水南文案2">
+						从社区居民口中得知，在2016年新农村改造的实施过程中，这一片平房的居民没有与政府完成协商，住房改造计划因此搁置，房屋仍然是之前城中村的模样。向西绕过安民小学，水南庄8号院的境况也是如此，院里全是由红砖垒砌的平房，各种生活用品堆放在门前，各家的铁门和纱窗都已被腐蚀生锈。
+					</div>
+				</div>
+				<p>2006年3月14日,《十一五规划纲要》正式提出建设社会主义新农村政策。该政策以实现农村现代化为目标，主要从基础设施、环境整治、村庄整合、转型升级等多个方面对村庄实施改造。</p>
+				<div id="水南庄3">
+					<img class="水南图片3" src="xiangcun-images/shuinanzhuang03.jpg" alt="水南庄3">
+					<div class="水南文案3">
+						位于朝阳区高碑店惠南河街的水南庄小区，在2016年接受了新农村改造，计划将原来的平房全部改成商住两用的连排居民楼，于2019年完成建设任务。“嗯，今昔非比啊，这里发生了翻天覆地的变化”，一位在住居民如此评价改造后的小区现状。从平房变小楼，水南庄小区正逐渐抹去城中村的印迹。
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+				<p>在此进程中，部分农业用地被转化为工业用地或城市建设用地，一些村庄也因为位于新建或改建的交通、水利、能源等基础设施项目的区域而被拆迁或整体搬迁。同时，为了寻求更好的工作机会，许多人口选择从农村迁移到城市，导致自然村庄人口减少，甚至出现村庄废弃的情况。据城乡建设部统计，我国的自然村数量在过去的二十多年里减少了120多万，平均每天消失80-100个村庄。城市的扩张与村庄的消逝似乎成为了如今城镇发展的必然趋势。
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="body2">
+		<div class="标题"><img src="xiangcun-images/消逝标题.jpg" alt="又一村"></div>
+		<div id="body2-1">
+			<div id="body2-1-1">
+				<div id="container">
+					<p>21世纪以来，中国正经历着前所未有的社会变革。在城乡结构变化中，城镇化进程加速，与之相伴的是农村人口向城市迁移的趋势、乡村数量的大幅减少、乡村建筑与文化的悄然消逝。
+					</p>
+					<div style="position: relative; width: 100%; height: 0; padding-top: 114.2857%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;margin: 50px 0px 60px 0px;">
+						<iframe loading="lazy"
+							style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+							src="https:&#x2F;&#x2F;www.canva.cn&#x2F;design&#x2F;DAF4UgBliTU&#x2F;view?embed"
+							allowfullscreen="allowfullscreen" allow="fullscreen">
+						</iframe>
+					</div>
+					<p>我国村庄规模与常住人口数量正不断减小。据城乡建设部统计，我国的自然村数量在过去的二十多年里减少了120多万，平均每天消失80-100个村庄，城镇化率从2000年的36.22%激增到2022年的65.22%。
+					</p>
+					<div id="农民工">
+						<img class="农民工图片" src="xiangcun-images/环卫工.jpg" alt="农民工">
+						<div class="农民工文案">
+							在这二十多年间，农村居民离开土地，大量农村劳动力转移到城镇中，农业结构随之调整，不少村庄因缺少活力而逐渐消失。随着我国现代化的持续推进和城市建设需求的扩大，乡村的青壮年纷纷流向城市，成为了常居异乡的农民工。
+						</div>
+					</div>
+					<p>新世纪的前5年，全国农民工数量每年增加600万~800万人，2004年，外出就业农民工约为1.18亿人，占农村劳动力的23.8%。这个数据一直呈上升趋势，直到2022年，我国农民工规模达2.95亿人，占全国总人数的20.8%，占农村人口的60%。
+					</p>
+					<p>农民工向城市流动背后还隐藏着另一个趋势——农村家庭搬离村庄。农村青壮年外出打工以赚取生计，部分农村儿童跟随父母前往大城市生活，经历着学生流失的乡村教育事业正不断萎缩。
+					</p>
+					<div id="shuinan"><img class="shui" src="xiangcun-images/xiaoxue.png" alt="乡村和城区小学数量"></div>
+					<p>2020年，我国乡村小学数量是44万，到2021年这个数字下降到了8万。即使是在全国小学数量减小的大背景之下，乡村小学也以81%的下降比例远高于城区小学0.6%的下降比例。
+					</p>
+					<div id="shuinan"><img class="shui" src="xiangcun-images/maisui.png" alt="乡村和城区专任教师数量"></div>
+					<p>在教师数量上，乡村小学专任教师数量减少了56%；与之相反，城区小学专任教师数量增加了123%。乡村教育资源的不断缺失，导致城乡教育公平问题愈发严重，也促使不少农村家庭将孩子送到城市读书。这些家庭大多延续着以孩子为中心的传统家庭模式，故直系家庭随着孩子接受教育而迁往城市也变得理所当然，这更加促进了乡村的老龄化和“空心化”。
+					</p>
+					<div id="挖掘机">
+						<img class="挖掘机图片" src="xiangcun-images/挖掘机.jpg" alt="农民工">
+						<div class="挖掘机文案">
+							此外，为优化资源配置和改善农村居民的生活条件，政府推动撤村并镇、拆迁等政策，使得一些村庄被合并到其他行政村或乡镇中。
+						</div>
+					</div>
+					<p>
+						自然灾害也是导致村庄消逝的一个原因。地震、台风、洪水……突如其来的自然灾害对人类生命、财产和居住环境造成的伤害是不可逆的。顷刻之间，村庄就此湮没，许多村民不得不离开家园。
+					</p>
+					<ul class="box">
+						<li>
+							<img src="xiangcun-images/汶川地震.png" alt="">
+							<div class="text"></div>
+						</li>
+						<li>
+							<img src="xiangcun-images/海南文昌.png" alt="">
+							<div class="text"></div>
+						</li>
+						<li>
+							<img src="xiangcun-images/河南特大暴雨灾害.png" alt="">
+							<div class="text"></div>
+						</li>
+					</ul>
+					<p>种种迹象表明，我国乡村正经历着消逝。在社会发展的大背景下，农村的人们前往城市寻找机会，许多乡村加快着城市化的步伐。城市化是我国总体经济发展的需求，但城市的扩张也不可避免地影响了乡村自身的发展。
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="body3">
+		<div class="标题"><img src="xiangcun-images/振兴标题.jpg" alt="又一村"></div>
+		<div id="body3-1">
+			<div id="container">
+				<p>从2000年以来国务院发布的文件来看，国家针对乡村发展的政策经历了从偏重经济和基建发展之路到关注环境保护、文化和乡村振兴等可持续发展战略的变化。随着政府对于乡村高质量发展的重视、关于乡村的政策文件逐渐丰富和精细，乡村的发展又会呈现怎样的趋势呢？
+				</p>
+				<div id="政策">
+					<img class="政策图片" src="xiangcun-images/乡村政策历年变化.png" alt="">
+					<div class="政策文案">
+						国家重视农村发展，重点解决两件大事，教育和医疗。二十年间，关于“教育”和“医疗”的政策占比较多。政府通过实施各种政策，不断加大对农村教育事业的投入和加强农村医疗卫生体系建设。
+					</div>
+					<div class="政策文案">
+						根据教育部数据，截至2022年，我国农村义务教育阶段本科以上学历专任教师占比达76.01%，比2012年增长35.29个百分点。
+					</div>
+					<div class="政策文案">
+						《关于进一步深化改革促进乡村医疗卫生体系健康发展的意见》中指出，完善乡村医疗卫生体系，是全面推进健康中国建设的迫切要求，也是全面推进乡村振兴的应有之义。
+					</div>
+					<div>
+						<img class="卫生" src="xiangcun-images/weisheng.png" alt="每千人口卫生技术人员">
+					</div>
+					<div class="政策文案">
+						2011-2021年间，农村每千人口卫生技术人员的数量逐年上升；农村每千人口卫生技术人员与城市每千人口卫生技术人员的数量比值也呈上升趋势。国家对农村的医疗资源投入逐年增多，充分落实“以基层为重点”的卫生健康工作方针，推动医疗卫生工作重心下移、资源下沉，农村卫生事业取得了积极进展和成效。
+					</div>
+					<div class="政策文案">
+						有关“扶贫”的政策首次在2001年出现，沉寂多年后，从2016年开始频繁“露面”，在2019年——打赢脱贫攻坚战、决胜全面建成小康社会的关键之年，其数量达到最多。2019年末，全国农村贫困人口较上年减少1109万人，全国贫困村仅剩2707个。
+					</div>
+					<div class="政策文案">
+						有关“乡村振兴”的政策从2018年开始增多。党的十九大上，习近平总书记明确提出实施乡村振兴战略。2018年是实施乡村振兴战略的开局之年，以乡村振兴为起点，城乡关系进入新阶段。中共中央、国务院印发了《乡村振兴战略规划（2018－2022年）》，对实施乡村振兴战略作出阶段性谋划。
+					</div>
+					<div class="政策文案">
+						2021年，中央一号文件《中共中央国务院关于全面推进乡村振兴加快农业农村现代化的意见》发布，宣布“三农”工作重心从脱贫攻坚转移到全面推进乡村振兴。“乡村振兴”有关政策数量也在该年达到峰值。
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+				<p>随着政策的稳健落实和教育、医疗等基础设施的进一步完善，乡村发展逐渐回春，返乡人才为乡村发展注入了强劲动力。
+				</p>
+				<div id="shuinan"><img class="shui" src="xiangcun-images/chuangxin.png" alt="返乡创新创业和网络零售"></div>
+				<p>2017年-2022年，全国返乡下乡创新创业人员逐年增长，2022年回流1220万人才，相较于2017年增长121.9%。伴随着青年返乡和人才引进，乡村发展在各个领域全面开花，无数年轻人争当“新农人”，零售业务开拓新途径，线上电商如火如荼，2022年农村网络零售额高达2.17万亿元。
+				</p>
+				<div id="shuinan"><img class="nongmingong" src="xiangcun-images/为什么为什么为什么.png" alt="外出农民工"></div>
+				<p>此外，“互联网+农业”发展模式进一步加速农业产业的转型和升级。随着乡村数字化时代的到来，农民工的营收方式更加多元化，越来越多的农民工选择在离家近的省内工作，跨省流动的规模逐渐变小。在2013-2022年间，农民工的收入从2609元增长到4615元，年均增长率约为5%，生活水平逐步提高。
+				</p>
+				<div id="shuinan"><img class="shui" src="xiangcun-images/shouru.png" alt="城乡居民人均可支配收入及比值"></div>
+				<p>据国家统计局数据，近二十多年来，农村居民人均收入与城市居民人均收入都在不断上升，并且在2003-2022年间，农村居民收入的增长速度超过城市居民，城乡居民收入差距持续缩小，农村的经济发展迸发无限活力。
+				</p>
+				<p>传统的农业生产在市场经济的强力冲击下面临着巨大的挑战，为适应市场而引入的现代化生产要素又受到环境保护政策法规的限制。如何处理好资源保护和产业发展之间的两难关系，是绿水青山和金山银山相互转化过程中的共性问题。
+				</p>
+				<p>因此，借助农业文化遗产赋能乡村发展，就成为保障农村居民生活质量、提升收入水平的有效路径。中国科学院地理科学与资源研究所的研究员闵庆文也指出：“农业遗产保护的一个关键问题，要让当地的农民受益，让他们愿意继续从事农业生产。”
+				</p>
+				<div class="slidershow middle">
+					<div class="slides">
+						<input type="radio" name="r" id="r1" checked>
+						<input type="radio" name="r" id="r2">
+						<input type="radio" name="r" id="r3">
+						<input type="radio" name="r" id="r4">
+						<input type="radio" name="r" id="r5">
+						<input type="radio" name="r" id="r6">
+						<input type="radio" name="r" id="r7">
+						<div class="slide s1"><img src="xiangcun-images/农业文化遗产1.png" alt="农业文化遗产地图1"></div>
+						<div class="slide"><img src="xiangcun-images/农业文化遗产2.png" alt="农业文化遗产地图2"></div>
+						<div class="slide"><img src="xiangcun-images/农业文化遗产3.png" alt="农业文化遗产地图3"></div>
+						<div class="slide"><img src="xiangcun-images/农业文化遗产4.png" alt="农业文化遗产地图4"></div>
+						<div class="slide"><img src="xiangcun-images/农业文化遗产5.png" alt="农业文化遗产地图5"></div>
+						<div class="slide"><img src="xiangcun-images/农业文化遗产6.png" alt="农业文化遗产地图6"></div>
+						<div class="slide"><img src="xiangcun-images/农业文化遗产7.png" alt="农业文化遗产地图7"></div>
+					</div>
+				</div>
+				<div class="navigation">
+					<label for="r1" class="bar">2013年</label>
+					<label for="r2" class="bar">2014年</label>
+					<label for="r3" class="bar">2015年</label>
+					<label for="r4" class="bar">2017年</label>
+					<label for="r5" class="bar">2020年</label>
+					<label for="r6" class="bar">2021年</label>
+					<label for="r7" class="bar">2022年</label>
+				</div>
+				<p id="农业文化遗产">（可悬停点击查看各年份农业文化遗产地图）</p>
+				<p>农业文化遗产是人民在长期农业生产实践中创造并传承至今的农业生产系统，涵盖了各种能够高效运作的技术和知识体系。2013年，我国首次开展重要农业文化遗产发掘工作，从古枣到古梨，从梯田到茶园，共收录19个农业生产系统，覆盖了13个省份。十年过后，我国的农业文化遗产累计收录191个，进一步扩大了农耕文化保护传承覆盖面。
+				</p>
+				<p>对于那些曾遭受过灾害的村庄来说，重创之下，亦有新生。
+				</p>
+				<ul class="box1">
+					<li>
+						<img src="xiangcun-images/北川县.png" alt="">
+						<div class="text"></div>
+					</li>
+					<li>
+						<img src="xiangcun-images/松树村.png" alt="">
+						<div class="text"></div>
+					</li>
+					<li>
+						<img src="xiangcun-images/大石岩村.png" alt="">
+						<div class="text"></div>
+					</li>
+				</ul>
+				<p>跨越群山、聚落成村，构建起我们赖以生存的农耕文明；离乡孤行、扎根远城，铸就了我们难以割舍的都市文化。农村居民从大山迈向城市的迁徙过程，折射出城市与农村发展的不平衡性。城市生活的高压和快节奏，将我们与亲近自然的原初情感状态渐渐剥离。
+				</p>
+				<div id="shuinan"><img class="shui" src="xiangcun-images/词云.png" alt="社会观念词云图"></div>
+				<p>乡村生活的视频将乡村以一种富有诗意和传统特色的生活方式呈现给城市居民，增强了人们对自然、宁静村庄的向往。新兴媒体使得乡村在社会变革中被赋予了新的角色，成为满足城市居民精神需求的场域。
+				</p>
+				<div id="结尾分隔">
+					<img id="结尾分隔" src="xiangcun-images/柳条.png" alt="">
+				</div>
+				<p>数十年风华，中国乡村走过一个又一个重要节点，迈上一个又一个崭新台阶。从家庭联产承包责任制、农业供给侧结构性改革，到“精准扶贫”、乡村振兴战略，我国关于乡村的政策不断探索创新，农村工作重点与时俱进。民族要复兴，乡村必振兴，我们要做到守住乡村的根，传承乡村的魂。时代的列车飞速向前，乡村一定是这趟车上最活跃的动力源泉之一。向下扎根、向上生长，相信在国家政策引领和各方勠力协作下，乡村现代化将继续迈向高质量发展。
+				</p>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<footer>
+		团队成员：罗雪丽 周钰千 辜季秋<br>
+		<p></p>
+		指导老师：廉莹<br>
+		<p></p>
+		柳暗花明又一村——中国乡村发展二十年 &copy; 可视化软件工具与应用
+	</footer>
+</body>
+
+</html>
